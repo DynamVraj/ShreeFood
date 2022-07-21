@@ -146,7 +146,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         try {
             String whatsAppMessage = "https://maps.google.com/?q="+lat+","+lng;
 
-            String toNumber = "919924371177"; // Replace with mobile phone number without +Sign or leading zeros, but with country code
+            String toNumber = "xxxxxxxxxx"; // Replace with mobile phone number without +Sign or leading zeros, but with country code
             //Suppose your country is India and your phone number is “xxxxxxxxxx”, then you need to send “91xxxxxxxxxx”.
 
 
