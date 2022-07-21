@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context="com.business7days.shreefood.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="378dp"
+        android:layout_height="284dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/idEdtPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="280dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:fontFamily="@font/popins"
+        android:hint="Enter your phone"
+        android:textColorHint="@color/black"
+        android:background="#ff8130"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/idBtnGetOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idEdtPhoneNumber"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:fontFamily="@font/popins"
+        android:text="Get OTP"
+        android:textAllCaps="false" />
+
+    <EditText
+        android:id="@+id/idEdtOtp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/idBtnGetOtp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/popins"
+        android:hint="Enter OTP"
+        android:textColorHint="@color/black"
+        android:background="#ff8130"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/idBtnVerify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdtOtp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:fontFamily="@font/popins"
+        android:text="Verify OTP"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/idBtnGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idBtnVerify"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:fontFamily="@font/popins"
+        android:text="Gallery"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idBtnGallery"
+        android:layout_marginTop="30dp"
+        android:ems="120"
+        android:fontFamily="@font/popins"
+        android:inputType="textPersonName"
+        android:text="Thank You for supporting us."
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTextPersonName"
+        android:layout_marginTop="1dp"
+        android:ems="120"
+        android:fontFamily="@font/popins"
+        android:inputType="textPersonName"
+        android:text="Contact no. :- 99243 71177"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="20dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="700dp"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo2" />
+    </androidx.appcompat.widget.Toolbar>
+</RelativeLayout>
